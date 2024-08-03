@@ -8,10 +8,8 @@ import java.sql.SQLException;
 import com.facebook.entity.facebookuser;
 
 public class FacebookDao implements FacebookDaoInterface {
-
 	@Override
-	public int createProfileDao() {
-		facebookuser fu=null;
+	public int createProfileDao(facebookuser fu) {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/revature","root","Srinivas@143");
@@ -21,13 +19,9 @@ public class FacebookDao implements FacebookDaoInterface {
 			ps.setString(3, fu.getPassword());
 			ps.setString(4, fu.getAddress());
 			ps.executeUpdate();
-			
 		} catch (ClassNotFoundException |SQLException e) {
 			e.printStackTrace();
-		}
-		return 0;
+		}		return 0;
 	}
-
-		
 	}
 

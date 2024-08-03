@@ -7,7 +7,6 @@ import com.facebook.service.FacebookService;
 import com.facebook.service.FacebookServiceInterface;
 
 public class Controller implements ViewControllerInterface {
-
 	@Override
 	public void createProfile() {
 		Scanner scan=new Scanner(System.in);

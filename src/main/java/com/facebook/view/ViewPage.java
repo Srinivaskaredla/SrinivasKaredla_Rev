@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.facebook.controller.Controller;
 import com.facebook.controller.ViewControllerInterface;
 
-public class ViewPage extends Object {
+public class ViewPage {
 
 	public static void main(String[] args) {
 		
@@ -23,7 +23,6 @@ public class ViewPage extends Object {
 		int n= scan.nextInt();
 		
 		//view want to interact with Controller ,so it  must interact using low coupling i.e, via Interface
-		
 		ViewControllerInterface c =new Controller();
 		
 		switch(n) 
