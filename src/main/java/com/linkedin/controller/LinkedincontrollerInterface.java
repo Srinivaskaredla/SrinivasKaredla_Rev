@@ -9,11 +9,24 @@ public interface LinkedincontrollerInterface {
 	void viewAllProfile();
 
 	void deleteProfile();
-
+	
 	void loginProfile();
 
 	void searchProfile();
 
 	void editProfile();
 
+	
+//	 default void add ()
+//	 {
+//		 
+//	 }
+//	 static void multiplication()
+//	 {
+//		 
+//	 }
+//	 private void division()
+//	 {
+//		 
+//	 }
 }
