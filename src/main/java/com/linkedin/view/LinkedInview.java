@@ -10,6 +10,9 @@ import com.linkedin.utility.LinkedControllerDesignFactory;
 public class LinkedInview {
 
 	private static Logger log =Logger.getLogger("LinkedInview");	public static void main(String[] args) {
+		
+		System.out.println("I am Srinivas");
+		
 		String ss="y";
 		Scanner scan = new Scanner(System.in);
 		while (ss.equals("y")){
